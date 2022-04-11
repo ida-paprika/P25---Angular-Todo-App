@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs nav-fill">
+    <li class="nav-item">
+        <a routerLink="/all" routerLinkActive="active"
+            [ngClass]="{'nav-link': true, 'text-decoration-underline text-primary fw-bold': tab == '/all', 'text-secondary': tab !== '/all'}">All</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="/active" routerLinkActive="active"
+            [ngClass]="{'nav-link': true, 'text-decoration-underline text-primary fw-bold': tab == '/active', 'text-secondary': tab !== '/active'}">Active</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="/completed" routerLinkActive="active"
+            [ngClass]="{'nav-link': true, 'text-decoration-underline text-primary fw-bold': tab == '/completed', 'text-secondary': tab !== '/completed'}">Completed</a>
+    </li>
+</ul>

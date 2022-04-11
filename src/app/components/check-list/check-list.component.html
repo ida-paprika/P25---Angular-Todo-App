@@ -1,0 +1,11 @@
+<form #checkForm="ngForm">
+    <div *ngFor="let check of checkList" class="form-check">
+        <input [name]="'check' + check.id" class="form-check-input" type="checkbox" [value]="check.id" [id]="check.id"
+            ngModel (change)="checkedItem(check)" [attr.checked]="check.checked">
+        <label
+            [class]="{'form-check-label': true, 'text-decoration-line-through': check.checked == true, 'text-secondary': check.checked == true}"
+            [for]="check.id">
+            {{ check.label }}
+        </label>
+    </div>
+</form>

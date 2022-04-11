@@ -1,0 +1,5 @@
+<h1 class="text-center mb-5 fw-bold">#todo</h1>
+
+<app-navbar></app-navbar>
+<app-add-item (item)="addItem($event)"></app-add-item>
+<app-check-list [newItem]="item"></app-check-list>
